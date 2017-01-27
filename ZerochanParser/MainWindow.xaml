@@ -16,6 +16,7 @@
         <TextBox x:Name="PageBox" Height="44" Margin="151,163,212,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667" FontFamily="Segoe UI Light"/>
         <Label x:Name="label_Copy1" Content="Number of Pages" HorizontalAlignment="Left" Margin="0,175,0,0" VerticalAlignment="Top" Width="151" Height="27" RenderTransformOrigin="0.526,0.847" FontFamily="Segoe UI Light"/>
         <Label x:Name="progress" Content="0/0" HorizontalAlignment="Right" Margin="0,68,10,46" Width="197" FontSize="48" FontFamily="Segoe UI Light"/>
+        <Label x:Name="label1" Content="By Piotr 'MiXer' Mikstacki. ja.to.mixer@gmail.com. A.D 2015" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="324" Height="25"/>
 
     </Grid>
 </Window>

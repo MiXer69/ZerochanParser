@@ -33,12 +33,14 @@ namespace ZerochanParser
             webClient.DownloadProgressChanged += (object sender, DownloadProgressChangedEventArgs e) =>
             {
                 MainWindow.instance.progress.Content = string.Format("{0} / {1}", curProgress, ToDownload);
-                //MessageBox.Show(string.Format("http://static.zerochan.net/{0}.240.{1}.jpg", AnimeName, number));
             };
             webClient.DownloadFileCompleted += (object sender, AsyncCompletedEventArgs e) => {
                 curProgress++;
                 MainWindow.instance.progress.Content = string.Format("{0} / {1}", curProgress, ToDownload);
-
+                if (curProgress == ToDownload)
+                {
+                    MainWindow.instance.progress.Content = "Done!";
+                }
             };
             webClient.DownloadFileAsync(new Uri(string.Format("http://static.zerochan.net/{0}.full.{1}.jpg", AnimeName, number)), Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + "\\" + AnimeName + "\\" + AnimeName+"_" + number + ".jpg");
         }
