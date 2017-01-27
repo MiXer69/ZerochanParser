@@ -1,4 +1,8 @@
-﻿using HtmlAgilityPack;
+﻿/* ZerochanParser - Parser for zerochan
+ * Remember to credit me after using this in your app: 
+ * Piotr "MiXer" Mikstacki => ja.to.mixer@gmail.com
+ * */
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
